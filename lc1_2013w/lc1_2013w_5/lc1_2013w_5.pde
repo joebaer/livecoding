@@ -11,7 +11,7 @@ void setup() {
     santas = new Santa[6];
     for (int i = 0; i < santas.length; i++) {
         float randomX = random(0 + 20, width-20);
-        float randomY = random(0, height-30);
+        float randomY = random(50, height-50);
         santas[i] = new Santa(randomX, randomY, random(2, 4));
     }
 
