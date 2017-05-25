@@ -46,6 +46,7 @@ class Santa {
     }
 
     void draw() {
+        stroke(0);
         fill(this.skin);
         ellipse(this.x, this.y, w, w);
         fill(this.beard);
