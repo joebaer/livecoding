@@ -1,24 +1,17 @@
 void setup() {
-    makeX(5);
-    makeX(10);
+  makeX(5);
+  makeX(10);
 }
 
 void makeX(int size) {
-
-    int countLeft = 0;
-    int countRight = size - 1;
-
-    for (int y=0; y < size; y++) {
-        for (int x = 0; x < size; x++) {
-            if (x == countLeft || x == countRight) {
-                print("#");
-            } else {
-                print(".");
-            }
-        }
-        countLeft++;
-        countRight--;
-        println();
-    }
+  for (int i=0; i<size; i++) {
     println();
+    for (int j=0; j<size; j++) {
+      if (i==j || (size-1-i)==(j)) {
+        print('#');
+      } else {
+        print('.');
+      }
+    }
+  }
 }
